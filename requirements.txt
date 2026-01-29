@@ -2,11 +2,11 @@
 --extra-index-url https://download.pytorch.org/whl/cu118
 
 # Core audio/video dependencies
-audioop-lts
+audioop-lts; python_version>='3.13'
 standard-aifc
 standard-sunau
 altgraph==0.17.3
-audioread==3.0.1
+audioread==3.1.0
 certifi==2022.12.07
 cffi==1.17.1
 cryptography==3.4.6
@@ -15,7 +15,7 @@ future==0.18.3
 julius==0.2.7
 kthread==0.2.3
 librosa==0.10.1
-llvmlite==0.44.0
+llvmlite==0.46.0
 matchering==2.0.6
 ml_collections==0.1.1
 natsort==8.2.0
@@ -30,8 +30,8 @@ pyrubberband==0.4.0
 pytorch_lightning==2.0.0
 PyYAML==6.0.2
 resampy==0.4.2
-numpy==2.1.3
-scipy==1.15.2
+numpy==2.3.5
+scipy==1.17.0
 pygobject
 
 # Ultimate Vocal Remover core
@@ -39,24 +39,24 @@ soundstretch==1.2
 samplerate==0.1.0
 screeninfo==0.8.1
 diffq
-playsound==1.3.0
+playsound3==3.3.1
 
 # ONNX ecosystem
-onnx==1.17.0
-onnxruntime==1.21.0
-onnxruntime-gpu==1.21.0
-onnx2pytorch==0.5.1
+onnx==1.20.1
+onnxruntime==1.23.2
+onnxruntime-gpu==1.23.2
+onnx2pytorch==0.5.3
 
 # Platform‐specific sound file libraries
-SoundFile==0.12.1; sys_platform != 'darwin'
+SoundFile==0.13.1; sys_platform != 'darwin'
 PySoundFile==0.9.0.post1; sys_platform == 'darwin'
 
 # Misc utilities
 urllib3==1.26.12
 wget==3.2
-numba==0.61.0rc2
+numba==0.63.1
 
 # CUDA‐enabled PyTorch & domain libraries
-torch==2.7.0+cu118
-torchvision==0.22.0+cu118
-torchaudio==2.7.0+cu118
+torch==2.10.0
+torchvision==0.25.0
+torchaudio==2.10.0
